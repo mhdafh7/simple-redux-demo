@@ -1,0 +1,36 @@
+.item {
+    background-color: yellow;
+    width: 96%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+    padding: 1rem;
+    img {
+        object-fit: cover;
+        height: 170px;
+        width: 170px;
+    }
+    .title-and-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .title{
+        font-weight: bold;
+      }
+      .description{
+        font-weight: 400;
+      }
+    }
+    .price {
+    }
+    .delete {
+    }
+    .amount-container {
+        .add-amount {
+        }
+        .sub-amount {
+        }
+    }
+}
