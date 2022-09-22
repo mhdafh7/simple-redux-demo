@@ -3,7 +3,6 @@ import {
   Route,
 } from 'react-router-dom';
 import './styles/App.scss';
-import Navbar from './components/NavBar'
 import CartContainer from './components/CartContainer'
 import ShoppingList from './components/Home'
 
@@ -14,10 +13,6 @@ function App() {
         <Route path='/' element={<ShoppingList />} />
         <Route path='/cart' element={<CartContainer />} />
       </Routes>
-      {/* <div className="container">
-        <Navbar />
-        <CartContainer />
-      </div> */}
     </div>
   );
 }

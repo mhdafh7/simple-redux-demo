@@ -6,11 +6,6 @@
     overflow: hidden;
     margin-bottom: 6rem;
 
-    .title-bar {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-    }
     footer {
         margin: auto;
         position: fixed;
@@ -33,7 +28,26 @@
             border-radius: 5px;
             background: rgb(223, 68, 68);
             color: rgb(255, 242, 242);
-
         }
+    }
+}
+.title-bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+}
+.empty-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .empty-message {
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

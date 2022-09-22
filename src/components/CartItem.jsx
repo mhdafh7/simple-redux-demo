@@ -1,9 +1,9 @@
 import { useDispatch } from 'react-redux'
 import { PlusCircleFill, DashCircleFill, TrashFill } from 'react-bootstrap-icons'
-import { decrease, increase, remove } from '../features/cartSlice'
+import { increment, decrement, remove } from '../features/cartSlice'
 import '../styles/cartItem.scss'
 
-const CartItem = ({ id, image, title, description, price, amount }: any) => {
+const CartItem = ({ id, image, title, description, price, qty=0 }) => {
   const dispatch = useDispatch()
   return (
 
@@ -19,12 +19,12 @@ const CartItem = ({ id, image, title, description, price, amount }: any) => {
       }}>
         <TrashFill />
       </button>
-      <div className='amount-container'>
-        <button className="add-amount" onClick={() => dispatch(increase(id))}>
+      <div className='qty-container'>
+        <button className="add-qty" onClick={() => dispatch(increment(id))}>
           <PlusCircleFill />
         </button>
-        <h4>{amount}</h4>
-        <button className="sub-amount" onClick={() => dispatch(decrease(id))}>
+        <h4>{qty}</h4>
+        <button className="sub-qty" onClick={() => dispatch(decrement(id))}>
           <DashCircleFill />
         </button>
       </div>

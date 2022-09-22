@@ -1,9 +1,9 @@
 import { useDispatch } from 'react-redux'
-import { increase } from '../features/cartSlice'
+import { addToCart } from '../features/cartSlice'
 import { CartPlusFill } from 'react-bootstrap-icons'
 import '../styles/shoppingItem.scss'
 
-const ShoppingItem = ({ id, image, title, description, price, amount }: any) => {
+const ShoppingItem = ({ id, image, title, description, price, qty }) => {
   const dispatch = useDispatch()
   return (
     <div className='shopping-item'>
@@ -16,7 +16,7 @@ const ShoppingItem = ({ id, image, title, description, price, amount }: any) => 
 
       <div className='add-to-cart'>
       <h4 className="price">{`$${price}`}</h4>
-        <button className="add-to-cart-btn" onClick={() => dispatch(increase(id))}>
+        <button className="add-to-cart-btn" onClick={() => dispatch(addToCart({id,title,image,price,qty}))}>
           Add to cart <CartPlusFill />
         </button>
       </div>

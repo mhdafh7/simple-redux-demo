@@ -1,12 +1,20 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
+    id: 0,
+    title: "Sunglass 1",
+    description: "A good looking sunglass",
+    price: 549,
+    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    qty: 1,
+  },
+  {
     id: 1,
     title: "Sunglass 1",
     description: "A good looking sunglass",
     price: 549,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 2,
@@ -14,7 +22,7 @@ export default [
     description: "Yet another looking sunglass",
     price: 49,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 3,
@@ -22,7 +30,7 @@ export default [
     description: "A bad looking sunglass",
     price: 149,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 4,
@@ -30,7 +38,7 @@ export default [
     description: "A good looking sunglass another one",
     price: 199,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 5,
@@ -38,7 +46,7 @@ export default [
     description: "A looking sunglass",
     price: 369,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 6,
@@ -46,7 +54,7 @@ export default [
     description: "A nice looking sunglass",
     price: 249,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 7,
@@ -54,7 +62,7 @@ export default [
     description: "Average looking sunglass",
     price: 849,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 8,
@@ -62,7 +70,7 @@ export default [
     description: "Moderately good looking sunglass",
     price: 579,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 9,
@@ -70,7 +78,7 @@ export default [
     description: "Another good looking sunglass",
     price: 249,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
   {
     id: 10,
@@ -78,6 +86,6 @@ export default [
     description: "A good looking sunglass",
     price: 549,
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuZ2xhc3Nlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    amount: 1,
+    qty: 1,
   },
 ]

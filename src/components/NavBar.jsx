@@ -3,14 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import '../styles/navbar.scss'
 import { CartFill } from 'react-bootstrap-icons'
 import { useEffect } from 'react'
-import { getCartTotal } from '../features/cartSlice'
+import { totalCount } from '../app/Total'
 
 const NavBar = () => {
-  const { items, totalCount } = useSelector((state: any) => state.cart)
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getCartTotal())
-  }, [items])
+  const cart = useSelector(state => state.cart)
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getCartTotal())
+  // }, [items])
   return (
     <div className="nav-container">
       <h3>
