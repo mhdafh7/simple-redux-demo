@@ -1,0 +1,45 @@
+.shopping-item {
+    border: solid 2px #88888831;
+    border-radius: 10px;
+    max-width: 90%;
+    // max-height: 500px;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    margin: auto;
+
+    flex-direction: column;
+    img {
+        width: 90%;
+        margin: auto;
+        border-radius: 15px;
+        border: solid #a1a1a11c;
+    }
+    .title-and-desc {
+        margin: auto;
+        .title {
+            font-size: clamp(1rem, 0.5rem + 2vw, 3rem);
+            font-weight: 700;
+        }
+        .description {
+            font-size: clamp(0.7rem, 0.5rem + 0.7vw, 1.3rem);
+            font-weight: 400;
+        }
+    }
+    .add-to-cart {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .add-to-cart-btn {
+            font-size: clamp(0.5rem, 0.2rem + 1vw, 2rem);
+            border: none;
+            border-radius: 10px;
+            background-color: #2255ff;
+            padding: 0.7rem;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

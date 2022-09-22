@@ -1,20 +1,22 @@
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import '../styles/navbar.scss'
 import { CartFill } from 'react-bootstrap-icons'
-import items from '../stuffs'
+import { useEffect } from 'react'
+import { getCartTotal } from '../features/cartSlice'
 
 const NavBar = () => {
-  const { totalCount } = useSelector((state: any) => state.cart)
+  const { items, totalCount } = useSelector((state: any) => state.cart)
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getCartTotal())
+  }, [items])
   return (
     <div className="nav-container">
-      {/* <Link to="/">
-        <h3>
-          Shopping App
-        </h3>
-      </Link> */}
-      Shopping App
-      <button className="cart-btn">Cart ({`${totalCount}`}) <CartFill /></button>
+      <h3>
+        Shopping App
+      </h3>
+      <Link to='/cart' className="cart-btn"><button >Cart ({`${totalCount}`}) <CartFill /></button></Link>
     </div>
   )
 }

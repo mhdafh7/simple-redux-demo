@@ -5,7 +5,7 @@ import {
 import './styles/App.scss';
 import Navbar from './components/NavBar'
 import CartContainer from './components/CartContainer'
-import ShoppingList from './components/ShoppingList'
+import ShoppingList from './components/Home'
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
         <Route path='/' element={<ShoppingList />} />
         <Route path='/cart' element={<CartContainer />} />
       </Routes>
-      <div className="container">
+      {/* <div className="container">
         <Navbar />
         <CartContainer />
-      </div>
+      </div> */}
     </div>
   );
 }

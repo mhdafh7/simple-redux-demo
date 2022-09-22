@@ -1,0 +1,21 @@
+.home {
+    min-width: 720px;
+    margin-top: 7rem;
+    max-width: 2160px;
+    height: 100%;
+    padding: 2rem;
+
+    .list-title {
+        text-align: left;
+        font-weight: 400;
+    }
+    .list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width: 800px) {
+            & {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
