@@ -36,12 +36,39 @@
     align-items: baseline;
     justify-content: space-between;
     width: 100%;
+
+    .cart-qty {
+        display: flex;
+        align-items: center;
+        .total-qty {
+            margin-left: 0.3rem;
+        }
+    }
+    .back {
+        color: black;
+        text-decoration: none;
+    }
 }
 .empty-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    .title-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 5rem;
+        position: relative;
+
+        .back {
+            position: absolute;
+            top: 35%;
+            transform: translateY(-50%);
+            left: 5%;
+        }
+    }
 
     .empty-message {
         font-size: 2rem;

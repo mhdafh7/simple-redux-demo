@@ -19,11 +19,17 @@
             border: none;
             color: white;
             background: #2255ff;
-            padding: 0.7rem;
+            padding: 0.3rem 1rem;
             border-radius: 10px;
             height: 100%;
             width: 100%;
             cursor: pointer;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
 }

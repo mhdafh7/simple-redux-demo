@@ -8,7 +8,8 @@ import {
 } from "react-bootstrap-icons"
 import CartItem from "./CartItem"
 import { clearCart } from "../features/cartSlice"
-import { totalCount, totalPrice } from "../app/Total"
+import TotalQty from "./TotalQty"
+import TotalPrice from "./TotalPrice"
 import "../styles/cartContainer.scss"
 
 const CartContainer = () => {
@@ -52,17 +53,20 @@ const CartContainer = () => {
                         </h3>
                     </Link>
                     <h2 className="cart-title"> Your cart</h2>
-                    <h3>
+
+                    <div className="cart-qty">
                         <CartFill />
-                        {`( ${totalCount} )`}
-                    </h3>
+                        <TotalQty />
+                    </div>
                 </div>
                 {items?.map((item) => {
                     return <CartItem key={item.id} {...item} />
                 })}
                 <footer>
                     <div className="total-price">
-                        <h4>{`Total Price: $${totalPrice}`}</h4>
+                        <h4>
+                            Total Price: $<TotalPrice />
+                        </h4>
                     </div>
                     <button
                         className="clear-cart"
